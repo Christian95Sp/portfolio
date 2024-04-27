@@ -990,3 +990,23 @@ function handleTouchMove(e) {
     xDown = null;
     yDown = null;
 };
+
+/* PROVATO A AGGIUNGERE PULSANTI
+const controls = document.querySelectorAll(".controls")
+
+const changeDirection = (e) => {
+    if (e.key === "ArrowUp") {
+        characters[0].directionNew = "ArrowUp";
+    } else if (e.key === "ArrowDown") {
+        characters[0].directionNew = "ArrowDown";
+    } else if (e.key === "ArrowLeft") {
+        characters[0].directionNew = "ArrowLeft";
+    } else if (e.key === "ArrowRight") {
+        characters[0].directionNew = "ArrowRight";
+    }
+}
+
+controls.forEach(key => {
+    key.addEventListener("click", () => changeDirection({ key: key.dataset.key }));
+});
+*/

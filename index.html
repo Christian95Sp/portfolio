@@ -1,40 +1,647 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 
 <head>
-    <title>My Title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Portfolio Website</title>
+	<!---home  css link---->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!---parallax css link---->
+	<link rel="stylesheet" type="text/css" href="./css/star_parallax_style.css">
+	<!---slider skill css link---->
+	<link rel="stylesheet" type="text/css" href="./css/slider_style.css">
+	<!---Modaale Contattami css link---->
+	<link rel="stylesheet" type="text/css" href="./css/modale_contactform_style.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
 
-    <!-- FONTS -->
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
+	<!--boxicons-->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
+	<!------Header Section------>
+	<header>
+		<!-- Logo sx -->
+		<!-- <a href="#" class="logo">Devlo<span>pe</span>r</a> -->
+		<a href="#" class="logo">C<span>Sp</span></a>
 
-    <lu>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">Chi Sono</a></li>
+			<li><a href="#services">Servizi</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contatti</a></li>
 
-        <li> <a href="superTris.html">SuperTris</a></li>
-        <li> <a href="scacchi.html">Scacchi</a></li>
-        <li> <a href="dama.html">dama</a></li>
-        <!-- <li> <a href="biliardo.html">biliardo</a></li> -->
-        <li> <a href="pacman.html">pacman</a></li>
-        <li> <a href="tetris.html">tetris</a></li>
-        <li> <a href="ninjaStickHero.html">ninja stick</a></li>
+			<!-- icona luna viola 
+				<img width="48" height="48" src="https://img.icons8.com/color-glass/48/moon-satellite.png" alt="moon-satellite"/> -->
+			<!-- <li><a href="#passion">Passioni</a></li> -->
+			<li><a href="./pages/login/login.html"><i class='bx bx-rocket'></i></a>
+			</li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon">
 
-    </lu>
+		</div>
+	</header>
 
+	<!---------Parallax--------------->
+	<div class="wrapper">
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+
+		<!---------Home Section--------------->
+		<!-- 
+		<section class="home" id="home">
+				<div class="home-text">
+				<div class="slide">
+					<span class="one">Ciao,</span>
+					<span class="two">mi chiamo</span>
+				</div>
+				<h1>Christian</h1>
+				<h3>Sono un <span class="input"></span></h3>
+				<p>web Developer with 5+ years experience that keep customers <br> coming for about services make best
+					effort.</p>
+				<div class="button">
+					<a href="#" class="btn">Say Hello</a>
+					<a href="#" class="btn2"><span><i class="bx bx-play"></i></span>Whatch My Work</a>
+				</div>
+			</div>
+-->
+		<!---------Nuova Hero Section--------------->
+		<section class="hero" id="hero">
+			<div class="hero-text">
+				<div class="slide">
+					<span class="one">Ciao,</span>
+					<span class="two">io sono</span>
+				</div>
+				<h1><span>Christian </span>Spina</h1>
+				<h3>Sono un <span class="input"></span></h3>
+				<p>web Developer with 5+ years experience that keep customers <br> coming for about services make
+					best
+					effort. i love Wordpress.</p>
+				<!-- button -->
+				<div class="button">
+					<a href="./pages/area_privata/area_privata.html" class="btn1">Download CV</a>
+					<a href="#" id="myBtn" class="btn2 btn-outline-success"><span><i
+								class='bx bx-mail-send'></i></span>Contattami</a>
+				</div>
+				<!-- icon -->
+				<div class="hero-icons">
+					<a href="#"><i class='bx bxl-facebook'></i></a>
+					<a href="#"><i class='bx bxl-linkedin-square'></i></a>
+					<a href="#"><i class='bx bxl-instagram'></i></a>
+					<a href="#"><i class='bx bxl-github'></i></a>
+				</div>
+			</div>
+			<!-- img hero -->
+			<div class="hero-img">
+				<img src="./img/shape.webp" class="shape" alt="">
+				<img src="./img/shape violet.png" class="shape" alt="">
+				<img src="./img/scontornata-background.png" class="man" alt="">
+			</div>
+		</section>
+	</div>
+	<!---------about Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="./img/about.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>Chi <span>Sono</span></h2>
+			<h4>Website Designer!</h4>
+			<p>ho 28 anni, mi sono diplomato in un Istituto Tecnico in Geometra e successivamente
+				laureato
+				in
+				Informatica
+				<br> attualmente sto cercando di apprendere tutto ciò che riguarda lo sviluppo e il design
+				web.
+				Ho avuto
+				modo di provare lo sviluppo di un sito tramite CMS utilizzando Wordpress.
+				<br>Sogno di lavorare in ambito frontend, ux/ui design e successivamente punterò a diventare
+				full stack
+				developer.
+			</p>
+			<a href="./pages/passioni/passioni.html" class="btn">Passioni</a>
+		</div>
+	</section>
+
+	<!-----------Services Section-------------->
+	<section class="services" id="services">
+		<div class="main-text">
+			<p>What I am Expert In</p>
+			<h2>My<span>Services</span></h2>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-mobile-alt'></i>
+				</div>
+				<h3>Web Design</h3>
+				<p>
+					Comprendere il cliente, gli obiettivi e il pubblico. Analizzare i requisiti, le
+					funzionalità
+					e le tecnologie necessarie per il sito.
+				</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-code-alt'></i>
+				</div>
+				<h3>Web Development</h3>
+				<p>
+					Trasformare il mockup in codice HTML, CSS e JavaScript. Ottimizzare per la SEO e
+					testare su
+					vari dispositivi e browser prima del lancio.
+				</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+
+			<div class="box">
+				<div class="s-icons">
+					<i class='bx bx-edit-alt'></i>
+				</div>
+				<h3>Creative Design</h3>
+				<p>Creare un wireframe per la struttura e un mockup per il design. Definire layout,
+					colori e
+					tipografia per ottenere una visione chiara del sito.</p>
+				<a href="#" class="read">Read More</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- slider programmi e skill card  -->
+	<div class="skill-slider" id="skill-slider">
+		<div class="main-text">
+
+			<p>Apprese e in Apprendimento</p>
+			<h2>Mie <span>Skills</span></h2>
+		</div>
+
+		<div class="slider">
+			<!-- <div class="title">
+				Collection Photo
+			</div> -->
+
+			<!-- logo HTML -->
+			<div class="form">
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/1.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/html.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								HTML
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo CSS -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/2.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/css.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								CSS
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo JS -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/3.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/js.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								JavaScript
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo Bootstrap -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/4.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/bootstrap.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Bootstrap
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo React -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/5.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/react.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								React
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo Wordpress -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/6.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/wordpress.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Wordpress
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo Elementor -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/7.jpg" alt="">
+
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/elementor.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Elementor
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo Figma -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/8.jpg" alt="">
+
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/figma.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Figma
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo PS -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/9.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/ps.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								PhotoShop
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo LR -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/10.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/icons8-adobe-lightroom-96.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								LightRoom
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo canva -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/5.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/canva.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Canva
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo office -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/2.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/office365.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Office 365
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo notion -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/8.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/notion.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Notion
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo java -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/4.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/java.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Java
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!-- logo PostgreSQL -->
+				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/10.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/postgresql.png" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								PostgreSQL
+							</div>
+							<!-- <button>more</button> -->
+						</div>
+					</div>
+				</div>
+				<!-- Blocco x nuove aggiunte -->
+				<!-- 				<div class="item">
+					<div class="content">
+						<img class="img-bg" src="./img/slider_skill/7.jpg" alt="">
+
+						<li class="skill-logo">
+							<img src="./img/slider_skill/-----" alt="">
+						</li>
+
+						<div class="des">
+							<div>
+								Java
+							</div>
+							<button>more</button> 
+						</div>
+					</div>
+				</div> -->
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-----------Portfolio Section--------------->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<p>Portfolio</p>
+			<h2>Ultimi <span>Progetti</span></h2>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="img/project1.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/project2.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/project3.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/project4.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/project5.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/project6.jpg">
+				<div class="layer">
+					<h5>Visual Design</h5>
+					<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
+					<a href="#"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!------------------Contact section------------>
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Mie <span>Contatti</span></h2>
+			<h4>If you have any project in your mind.</h4>
+			<p>I'm a website Designer - creating bold & brave interface design for compaines all across the world.</p>
+			<div class="list">
+				<li><a href="#"><i class='bx bxs-phone'></i>0123456789</a></li>
+				<li><a href="#"><i class='bx bxs-envelope'></i>christian@gmail.com</a></li>
+				<li><a href="#"><i class='bx bxs-map'></i>Milano, Italia</a></li>
+			</div>
+
+			<div class="contact-icons">
+				<a href="#"><i class='bx bxl-facebook'></i></a>
+				<a href="#"><i class='bx bxl-linkedin-square'></i></a>
+				<a href="#"><i class='bx bxl-instagram'></i></a>
+				<a href="#"><i class='bx bxl-github'></i></a>
+			</div>
+		</div>
+		<!-- form -->
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Your Name " required>
+				<input type="email" placeholder="Your Email " required>
+				<!-- <input type="number" placeholder="your Mobile Number" required> -->
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+
+	</section>
+
+
+	<!---------End Section---------->
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2024 Christian Spina - Tutti i diritti riservati</p>
+		</div>
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</section>
+
+	<!-- modale Contattami hero -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div>
+			<!-- FORM FIGO  -->
+			<div class="form-container modal-content">
+				<form class="form">
+					<div>
+						<span class="close">&times;</span>
+					</div>
+					<div class="form-group">
+						<label for="name">Nome</label>
+						<input type="nome" id="nome" name="nome" placeholder="Il tuo nome" required="">
+					</div>
+					<div class="form-group">
+						<label for="email">La tua Email</label>
+						<input type="text" id="email" name="email" placeholder="Scrivi la tua email" required="">
+					</div>
+					<div class="form-group">
+						<label for="textarea">Come posso esserti d'aiuto</label>
+						<textarea name="textarea" id="textarea" rows="10" cols="50"
+							placeholder="Scrivi il tuo messaggio" required="">          </textarea>
+					</div>
+					<button class="btn-modal-form btn_form_modale" type="submit">Invia</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!---------------------------------------- script js ------------------------------------------------------>
+	<script type="text/javascript" src="./js/script.js"></script>
+	<!-- slider skill js -->
+	<script type="text/javascript" src="./js/slider_script.js"></script>
+
+
+	<!-- js libreria x animazione hero -->
+	<!-- https://github.com/mattboldt/typed.js -->
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<!-- //parole che cambiano nell'hero -->
+	<script type="text/javascript">
+		var typed = new Typed(".input", {
+			strings: ["Sviluppatore Web.", "Web Designer.", "Fotografo."],
+			typeSpeed: 80,
+			backSpeed: 70,
+			loop: true
+		});
+	</script>
 
 </body>
-
-<script type="text/javascript" src="./src/main_Script.js"></script>
-<script type="text/javascript" src="./src/superTris_Script.js"></script>
 
 </html>

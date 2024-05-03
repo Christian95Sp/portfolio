@@ -158,18 +158,18 @@ section {
     background-size: cover;
     background-position: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
+
+    -webkit-box-pack: justify;
+    flex-direction: row;
 }
 
 /*nuove imgine Hero*/
 .hero-img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
     width: 45%;
     height: 80%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 100px;
 }
@@ -192,9 +192,17 @@ section {
     overflow: hidden;
 }
 
+.man {
+    /*     margin-bottom: 150px; */
+    position: absolute;
+    z-index: 2;
+}
+
+
 .shape {
     filter: blur(35px);
     opacity: 40%;
+    z-index: 1;
 }
 
 .hero-img:hover .shape {
@@ -249,6 +257,7 @@ section {
 }
 
 .hero-text h1 {
+    width: 730px;
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
@@ -858,6 +867,7 @@ form textarea {
         transition: .1s;
     }
 
+
     .hero-text h3 {
         font-size: 2.5rem;
     }
@@ -916,6 +926,7 @@ form textarea {
         align-items: center;
     }
 
+
     .navlist a {
         display: block;
         margin: 17px;
@@ -949,6 +960,10 @@ form textarea {
         text-align: center;
         order: 2;
         width: 100%;
+    }
+
+    .hero-text h1 {
+        width: auto;
     }
 
     .hero-text p {
@@ -1039,16 +1054,25 @@ form textarea {
     /*hero----------------------------------------------*/
     .hero {
         /* grid-template-columns: 1fr; */
+        flex-direction: column;
+        /*      display: flex; */
         display: flex;
-        flex-wrap: wrap;
         gap: 2rem;
         height: auto;
+    }
+
+    .hero-img {
+        position: relative;
     }
 
     .hero-text {
         text-align: center;
         order: 2;
         width: 100%;
+    }
+
+    .hero-text h1 {
+        width: auto;
     }
 
     .hero-text p {
@@ -1059,9 +1083,6 @@ form textarea {
         justify-content: center;
     }
 
-    .hero-img {
-        margin: auto;
-    }
 
 
     .about {

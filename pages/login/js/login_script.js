@@ -33,10 +33,6 @@ registerBtn.addEventListener('click', () => {
     document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0";
 })
 
-function loginAreaPrivata() {
-    let loginTrue = document.getElementById("login-button");
-    loginTrue.link("../area_privata/area_privata.html");
-}
 
 //far muovere casina icona
 /* function moveHome() {
@@ -45,4 +41,21 @@ function loginAreaPrivata() {
 }
  */
 
+
+const credenziali = { username: "Lucky", password: "1224" };
+let loginTrue = document.getElementById("login-button");
+
+/* function loginAreaPrivata() {
+    let loginTrue = document.getElementById("login-button");
+    loginTrue.link("../area_privata/area_privata.html");
+}
+ */
+function credenzialiEsatta(usernameInserito, passwordInserita) {
+    let usernameInserito = document.getElementById("username").value;
+    let passwordInserita = document.getElementById("password").value;
+
+    if ((credenziali.username == usernameInserito) && (credenziali.password == passwordInserita))
+        loginTrue.link("../area_privata/area_privata.html");
+    else (alert("login Fallito"));
+}
 

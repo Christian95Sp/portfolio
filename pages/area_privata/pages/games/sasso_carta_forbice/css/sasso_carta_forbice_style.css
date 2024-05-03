@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+#container,
+#container2,
+#container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#titolo {
+    font-size: 4rem;
+}
+
+#informazioni {
+    font-size: 2.5rem;
+
+}
+
+.option-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.option-image {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    justify-content: space-between;
+    /*    background-color: aquamarine; */
+    font-size: 4rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.option-image:hover {
+    background-color: rgb(112, 50, 255);
+}
+
+#pulsante,
+#pulsante-versione-ls,
+#gioco-espansione-ls,
+#gioco-standard,
+#termina-partita {
+    align-items: center;
+    margin-top: 30px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 50px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+    :hover {
+        background: rgba(0, 118, 255, 0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+
+}
+
+#giocatore,
+#computer {
+    font-size: 2.5rem;
+}
+
+#risultato-partita {
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    margin: 30px 0;
+}
+
+.green-text {
+    color: hsl(130, 84%, 54%);
+
+}
+
+.red-text {
+    color: hsl(0, 84%, 54%);
+}
+
+.yellow-text {
+    color: rgb(255, 153, 0);
+}
+
+#segnapunti {
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    padding: 4%;
+    border-radius: 50px;
+}
+
+/* 
+#segnapunti-giocatore,
+#segnapunti-computer {} 
+*/

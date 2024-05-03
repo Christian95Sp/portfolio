@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sasso, carta e forbice</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/sasso_carta_forbice_style.css">
+
+	<!-- FONTS -->
+	<!-- Roboto -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+	<div id="container">
+		<h2 id="titolo">Sasso - Carta - Forbice</h2>
+		<h3 id="informazioni">Benvenuto</h3>
+		<!-- tipo di gioco -->
+		<button id="gioco-standard" onclick="sceltaSCF()">Sasso - Carta - Forbice</button>
+		<button id="gioco-espansione-ls" onclick="sceltaSCFLS()">Sasso - Carta - Forbice - Lizard - Spock</button>
+
+		<div class="option-container">
+
+			<!-- segni sasso -carta - forbice -->
+			<button id="carta" class="option-image" onclick="cliccatoCarta ()">✋</button>
+			<button id="forbici" class="option-image" onclick="cliccatoForbici ()">✌️</button>
+			<button id="sasso" class="option-image" onclick="cliccatoSasso ()">👊</button>
+			<!-- prova di aggiunta per versione lizar e spock -->
+			<button id="lizard" class="option-image" onclick="cliccatoLizard ()">👌</button>
+			<button id="spock" class="option-image" onclick="cliccatoSpock ()">🖖</button>
+		</div>
+	</div>
+	<button id="pulsante" onclick="verdettoStandard ()">Conferma</button>
+	<button id="pulsante-versione-ls" onclick="verdettoEspansione ()">Conferma 2</button>
+	</div>
+
+	<div id="container2">
+		<div id="giocatore"></div>
+		<div id="computer"></div>
+		<div id="risultato-partita"></div>
+	</div>
+
+	<div id="container3">
+		<div id="segnapunti">
+			<p id="segnapunti-giocatore"></p>
+			<p id="segnapunti-computer"></p>
+		</div>
+		<button id="termina-partita" onclick="ritornoAlMenu ()">Termina partita</button>
+	</div>
+
+
+	<!-- JS -->
+	<script src="./js/sasso_carta_forbice_script.js"></script>
+	
+</body>
+
+</html>

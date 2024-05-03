@@ -53,3 +53,10 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+//far muovere razzo menu
+function moveRockcet() {
+    let rocket_icon = document.getElementById("rocket");
+    rocket_icon.classList.add("bx-tada");
+}
+

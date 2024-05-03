@@ -164,6 +164,9 @@ section {
 
 /*nuove imgine Hero*/
 .hero-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     width: 45%;
     height: 80%;
     position: absolute;
@@ -935,6 +938,7 @@ form textarea {
 
     /*hero -----------------------------------*/
     .hero {
+        /* grid-template-columns: 1fr; */
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -1034,6 +1038,7 @@ form textarea {
 
     /*hero----------------------------------------------*/
     .hero {
+        /* grid-template-columns: 1fr; */
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -1061,7 +1066,7 @@ form textarea {
 
     .about {
         grid-template-columns: 1fr;
-        /*         justify-content: center;
+        /*justify-content: center;
         align-items: center; */
         text-align: center;
 

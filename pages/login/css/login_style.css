@@ -309,3 +309,24 @@ body {
         width: 100%;
     }
 }
+
+#home-icon {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .45s ease;
+
+
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    transition: .2s;
+}
+
+#home-icon:hover {
+    color: #ff4d05;
+}

@@ -33,5 +33,16 @@ registerBtn.addEventListener('click', () => {
     document.querySelector(".col-1").style.borderRadius = "0 20% 30% 0";
 })
 
+function loginAreaPrivata() {
+    let loginTrue = document.getElementById("login-button");
+    loginTrue.link("../area_privata/area_privata.html");
+}
+
+//far muovere casina icona
+/* function moveHome() {
+    let rocket_icon = document.getElementById("home-icon");
+    rocket_icon.classList.add("bx-tada-hover");
+}
+ */
 
 

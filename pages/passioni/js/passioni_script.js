@@ -49,4 +49,11 @@ window.addEventListener("scroll", (event) => {
             tab.classList.remove('active');
         }
     })
-});  
+});
+
+//far muovere razzo menu
+/* function moveRockcet() {
+    let rocket_icon = document.getElementById("rocket");
+    rocket_icon.classList.add("bx-tada-hover");
+}
+ */

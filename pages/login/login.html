@@ -30,7 +30,10 @@
         <div class="col col-2">
             <div class="btn-box">
                 <button class="btn btn-1" id="login">Login</button>
-                <button class="btn btn-2" id="register">Iscriviti</button>
+                <button class="btn btn-2" id="register">Accesso</button>
+                <!-- onmousemove="moveHome()" -->
+                <a href="../../index.html"><i id="home-icon" class='bx bx-home bx-tada-hover'></i></a>
+
             </div>
 
             <!-- Login Form Container -->
@@ -52,25 +55,25 @@
                         <a href="#">Password Dimenticata?</a>
                     </div>
                     <div class="input-box">
-                        <button class="input-submit">
+                        <button id="login-button" onclick="loginAreaPrivata()" class="input-submit">
                             <span>Login</span>
                             <i class="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>
                 </div>
-                <div class="social-login">
+                <!-- <div class="social-login">
                     <i class="bx bxl-facebook"></i>
                     <i class="bx bxl-linkedin-square"></i>
                     <i class="bx bxl-instagram"></i>
                     <i class="bx bxl-github"></i>
-                </div>
+                </div> -->
 
             </div>
 
             <!-- Register Form Container -->
             <div class="register-form">
                 <div class="form-title">
-                    <span>Crea un Account</span>
+                    <span>Richiedi Credenziali</span>
                 </div>
                 <div class="form-inputs">
 
@@ -85,25 +88,25 @@
                     </div>
 
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password" required>
-                        <i class="bx bx-lock-alt icon"></i>
+                        <input type="text" class="input-field" placeholder="Motiva la tua richiesta" required>
+                        <i class="bx bx-message-rounded icon"></i>
                     </div>
                     <div class="forgot-pass">
-                        <a href="#">Password Dimenticata?</a>
+                        <a href="#">Credenziali Dimenticate?</a>
                     </div>
                     <div class="input-box">
                         <button class="input-submit">
-                            <span>Registrazione</span>
+                            <span>Richiedi</span>
                             <i class="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>
                 </div>
-                <div class="social-login">
+                <!-- <div class="social-login">
                     <i class="bx bxl-google"></i>
                     <i class="bx bxl-facebook"></i>
                     <i class="bx bxl-twitter"></i>
                     <i class="bx bxl-github"></i>
-                </div>
+                </div> -->
             </div>
 
         </div>

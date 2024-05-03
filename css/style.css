@@ -167,8 +167,10 @@ section {
 
 /*nuove imgine Hero*/
 .hero-img {
-    width: 45%;
-    height: 80%;
+    /* width: 45%;
+    height: 80%; */
+    width: 400px;
+    height: 800px;
     position: relative;
     bottom: 0;
     right: 100px;
@@ -847,11 +849,46 @@ form textarea {
         padding: 110px 3% 60px;
     }
 
-    .hero-img img {
-        max-width: 500px;
+    .hero {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        height: 87vh;
+        margin-bottom: 150px;
+    }
+
+    .hero-text {
+        justify-content: center;
+        text-align: center;
+        order: 2;
         width: 100%;
-        height: 100%;
-        object-fit: contain;
+        /* avvicino la testo alla foto */
+        margin-top: 0px;
+    }
+
+    .hero-text h1 {
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        width: 100%;
+        /* avvicino la testo alla foto */
+        margin-top: 0px;
+    }
+
+    .hero-icons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 350px;
+        height: 300px;
+        /* avvicino la foto al header */
+        margin-top: 0px;
+        /* centro la foto */
+        margin-left: 70px;
+
     }
 
     .end {
@@ -873,16 +910,51 @@ form textarea {
     }
 
     .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
         height: 87vh;
     }
 
-    .hero-img img {
+    .hero-text {
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        width: 100%;
+        /* avvicino la testo alla foto */
+        margin-top: -100px;
+    }
+
+    .hero-text h1 {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+
+    /*     .hero-img img {
         max-width: 450px;
         width: 100%;
         height: 100%;
         object-fit: contain;
+} */
+    .hero-img {
+        width: 350px;
+        height: 300px;
+        /* avvicino la foto al header */
+        margin-top: -700px;
+        /* centro la foto */
+        margin-left: 70px;
+        margin-bottom: -700px;
+    }
+
+    .hero-icons {
+        justify-content: center;
     }
 }
+
+
+
+
 
 @media (max-width:920) {
     .about {
@@ -898,6 +970,36 @@ form textarea {
 
     .contact {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        height: 87vh;
+    }
+
+    .hero-text {
+        justify-content: center;
+        text-align: center;
+        order: 2;
+        width: 100%;
+        /* avvicino la testo alla foto */
+        margin-top: -100px;
+    }
+
+    .hero-img {
+        width: 350px;
+        height: 300px;
+        /* avvicino la foto al header */
+        margin-top: -700px;
+        /* centro la foto */
+        margin-left: 70px;
+        margin-bottom: -700px;
+    }
+
+    .hero-icons {
+        justify-content: center;
     }
 }
 
@@ -960,6 +1062,8 @@ form textarea {
         text-align: center;
         order: 2;
         width: 100%;
+        /* avvicino la foto alla foto */
+        /* margin-top: -210px; */
     }
 
     .hero-text h1 {
@@ -975,8 +1079,18 @@ form textarea {
     }
 
     .hero-img {
-        margin: auto;
+        width: 350px;
+        height: 650px;
+        /* avvicino la foto al header */
+        margin-top: -100px;
+        margin-bottom: 0px;
+        /* centro la foto */
+        margin-left: 70px;
     }
+
+    /*  .hero-img img {
+        margin: auto;
+    } */
 
     .about {
         grid-template-columns: 1fr;
@@ -1052,18 +1166,23 @@ form textarea {
     }
 
     /*hero----------------------------------------------*/
+
     .hero {
         /* grid-template-columns: 1fr; */
         flex-direction: column;
-        /*      display: flex; */
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
         height: auto;
     }
 
     .hero-img {
         position: relative;
+        height: 100px;
+        width: 80px;
+
     }
+
 
     .hero-text {
         text-align: center;
